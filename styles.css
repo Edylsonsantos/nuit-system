@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'sans-serif', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+img{
+    height: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 5% auto;
+    justify-content: space-between;
+    gap: 50px;
+}
+.img-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* Container do formulário */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+.tipo_registro{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"],
+input[type="date"],
+select,
+#documento_tipo {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border 0.3s ease;
+    font-family: 'sans-serif', sans-serif;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização opcional para campos do "Colectivo" */
+#colectivo_campos {
+    display: none;
+}
+
+/* Design responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button {
+        font-size: 0.9rem;
+    }
+    img{
+        height: 50px;
+    }
+}
+/* Estilo para mensagens de erro */
+.error {
+    color: #ff4d4d; /* Vermelho */
+    background-color: #ffe6e6; /* Fundo suave */
+    border: 1px solid #ff3333;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilo para mensagens de sucesso */
+.success {
+    color: #28a745; /* Verde */
+    background-color: #e6ffee; /* Fundo suave */
+    border: 1px solid #28a745;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
